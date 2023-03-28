@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: edtech_production
-  username: edtech
-  password: <%= ENV['EDTECH_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
